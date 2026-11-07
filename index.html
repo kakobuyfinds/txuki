@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#193c34">
+  <title>BaseTao spreadsheet : catégories, tailles et guide QC</title>
+  <meta name="description" content="Comprenez BaseTao spreadsheet : explorez les catégories, comparez les tailles, lisez les photos QC et préparez votre sélection avec méthode.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="BaseTao spreadsheet — Le carnet de sélection">
+  <meta property="og:description" content="Des catégories accessibles et des conseils concrets pour comparer vêtements, sneakers et accessoires avant de choisir.">
+  <meta property="og:image" content="https://s-cdn.vnluxury.vn/vnlux-media/22/1/21/louis_vuitton_nike_air_force_1.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BaseTao spreadsheet — Le carnet de sélection">
+  <meta name="twitter:description" content="Catégories, mesures, photos QC et budget : une méthode de comparaison en français.">
+  <meta name="twitter:image" content="https://s-cdn.vnluxury.vn/vnlux-media/22/1/21/louis_vuitton_nike_air_force_1.jpg">
+  <!-- index.html : renseigner une URL canonique uniquement après attribution de l'adresse de publication. -->
+  <!--
+    Ciblage éditorial
+    Expression principale : BaseTao spreadsheet
+    Expressions secondaires :
+    BaseTao finds ; guide BaseTao en français ;
+    photos QC BaseTao ; liens produits BaseTao.
+
+    24 intentions de longue traîne, traitées dans les contenus :
+    comment utiliser un BaseTao spreadsheet ;
+    organiser une sélection de vêtements ;
+    comparer des liens produits BaseTao ;
+    choisir une catégorie de sneakers ;
+    vérifier la pointure des chaussures ;
+    mesurer une semelle intérieure ;
+    comparer un hoodie à un vêtement existant ;
+    comprendre la largeur poitrine à plat ;
+    choisir la longueur d'un t-shirt ;
+    vérifier les épaules d'une veste ;
+    comparer la taille d'un pantalon ;
+    vérifier le tour de tête d'une casquette ;
+    choisir la taille d'un bracelet ;
+    lire des photos QC BaseTao ;
+    demander des photos de détail ;
+    comparer une variante et une référence ;
+    distinguer photo catalogue et photo QC ;
+    vérifier une composition textile ;
+    noter la date de vérification d'un lien ;
+    calculer un budget livré estimatif ;
+    comprendre le poids volumétrique ;
+    vérifier les conditions de retour ;
+    vérifier la compatibilité d'un lien ;
+    préparer un tableau comparatif personnel.
+
+    Recherche : accès direct à Google tenté mais indisponible.
+    Dix domaines repérés via la recherche web, sans classement Google certifié :
+    linktr.ee : accès aux ressources et guides ;
+    basetaoship.com : catégories et découverte de produits ;
+    basetaotrade.com : navigation et organisation ;
+    basetaoimport.com : liens et tableau de sélection ;
+    basetao-spreadsheet.org : recherche, comparaison et méthode ;
+    basetao.club : catégories et questions débutants ;
+    basetao-link.com : photos QC et liens produits ;
+    basetao.tattoo : sélection et préparation d'achat ;
+    basetao.help : organisation du tableau ;
+    basetao.org.uk : contrôle des liens et indépendance.
+    Synthèse originale ; chiffres commerciaux et témoignages non repris.
+  -->
+  <style>
+    :root{--paper:#f6f3eb;--ink:#202e29;--green:#193c34;--lime:#dce9a8;--line:#d5d9cb;--muted:#536359;--white:#fffefa}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}
+    a{color:inherit;text-underline-offset:4px}
+    a:focus-visible,summary:focus-visible{outline:3px solid #95612d;outline-offset:5px}
+    img{display:block;width:100%;height:auto}
+    h1,h2,h3,p,figure{margin:0}
+    h1,h2,h3{line-height:1.14;letter-spacing:-.035em}
+    h1{font-size:clamp(2.65rem,6vw,5.6rem);max-width:900px;font-weight:750}
+    h2{font-size:clamp(1.85rem,3.3vw,3rem)}
+    h3{font-size:1.3rem}
+    p+p{margin-top:1rem}
+    .wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+    .top{border-bottom:1px solid var(--line)}
+    .top-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 0}
+    .logo{font-weight:800;text-decoration:none;font-size:1.25rem;letter-spacing:-.04em}
+    .top-note{font-size:.8rem;color:var(--muted)}
+    .eyebrow{font-size:.73rem;text-transform:uppercase;letter-spacing:.14em;font-weight:750;color:var(--muted)}
+    .directory{padding:25px 0 30px;border-bottom:1px solid var(--line)}
+    .directory-head{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:14px}
+    .directory-head h2{font-size:1rem;letter-spacing:0}
+    .directory-head span{font-size:.78rem;color:var(--muted)}
+    .categories{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+    .categories a{padding:12px 10px;border:1px solid var(--line);background:var(--white);text-decoration:none;font-size:.85rem;font-weight:650;display:flex;justify-content:space-between;gap:5px;align-items:center}
+    .categories a::after{content:"↗";font-weight:400}
+    .categories a:hover{background:var(--lime);border-color:var(--green)}
+    .hero{padding:55px 0 48px}
+    .hero .eyebrow{margin-bottom:18px}
+    .hero h1 span{color:var(--green)}
+    .hero-bottom{display:flex;align-items:end;justify-content:space-between;gap:35px;margin-top:25px}
+    .intro{max-width:670px;font-size:1.08rem;color:var(--muted)}
+    .button{display:inline-flex;align-items:center;justify-content:center;gap:20px;padding:14px 20px;background:var(--green);color:#fff;text-decoration:none;font-weight:700;white-space:nowrap;border:1px solid var(--green)}
+    .button:hover{background:#2b5548}
+    .visual{display:grid;grid-template-columns:1.6fr 1fr;background:var(--green);color:#fff}
+    .visual figure{min-width:0}
+    .visual img{height:100%;min-height:330px;object-fit:cover;aspect-ratio:1.6}
+    .visual-copy{padding:38px;display:flex;flex-direction:column;justify-content:center}
+    .visual-copy .eyebrow{color:var(--lime);margin-bottom:18px}
+    .visual-copy h2{font-size:2rem;margin-bottom:20px}
+    .visual-copy p{color:#e1e8df}
+    .visual-copy small{display:block;margin-top:25px;font-size:.75rem;color:#d2ddce}
+    .section{padding:62px 0;border-bottom:1px solid var(--line)}
+    .section-head{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:end;margin-bottom:30px}
+    .section-head .eyebrow{margin-bottom:12px}
+    .section-head>p{color:var(--muted);max-width:520px}
+    .answer{border-left:4px solid var(--green);padding:4px 0 4px 22px;max-width:850px;font-size:1.08rem}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;margin-top:32px}
+    .step{border-top:1px solid var(--line);padding-top:20px}
+    .number{font-size:.8rem;font-weight:750;color:var(--muted);display:block;margin-bottom:15px}
+    .step h3{margin-bottom:12px}
+    .step p{font-size:.94rem;color:var(--muted)}
+    .gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+    .gallery figure{background:var(--white);border:1px solid var(--line);display:flex;flex-direction:column}
+    .gallery img{aspect-ratio:1;object-fit:contain;background:#fff}
+    figcaption{padding:20px}
+    figcaption .eyebrow{display:block;margin-bottom:9px}
+    figcaption p{font-size:.9rem;color:var(--muted);margin-top:10px}
+    .note{font-size:.8rem;color:var(--muted);margin-top:18px;max-width:900px}
+    .table-scroll{overflow-x:auto;border:1px solid var(--line);background:var(--white)}
+    table{width:100%;border-collapse:collapse;font-size:.92rem;min-width:610px}
+    caption{text-align:left;padding:18px;font-weight:700}
+    th,td{text-align:left;vertical-align:top;padding:16px 18px;border-top:1px solid var(--line)}
+    thead th{background:#e8ecdf;font-weight:750}
+    tbody th{width:22%;font-weight:650}
+    .articles{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+    .article{border-top:3px solid var(--green);padding-top:22px}
+    .article .eyebrow{margin-bottom:13px}
+    .article h3{font-size:1.65rem;margin-bottom:20px}
+    .article p{color:var(--muted);font-size:.95rem}
+    .article h4{margin:22px 0 8px;font-size:1rem}
+    .article ul{padding-left:21px;color:var(--muted);font-size:.95rem}
+    .article li+li{margin-top:7px}
+    .formula{background:#e8ecdf;padding:18px;font-weight:650;margin-top:20px;font-size:.94rem}
+    .faq-layout{display:grid;grid-template-columns:1fr 1.8fr;gap:55px}
+    .faq-layout .eyebrow{margin-bottom:13px}
+    details{border-top:1px solid var(--line);padding:18px 0}
+    details:last-child{border-bottom:1px solid var(--line)}
+    summary{cursor:pointer;font-weight:700;padding-right:12px}
+    details p{margin-top:12px;color:var(--muted);font-size:.95rem}
+    .closing{background:var(--lime);padding:35px;display:flex;gap:28px;justify-content:space-between;align-items:center;margin-top:45px}
+    .closing h2{font-size:1.8rem}
+    .closing p{font-size:.95rem;margin-top:10px}
+    footer{padding:35px 0 45px;font-size:.8rem;color:var(--muted)}
+    footer .logo{display:inline-block;color:var(--green);margin-bottom:13px}
+    footer p{max-width:920px}
+    @media(min-width:900px){.deferred{content-visibility:auto;contain-intrinsic-size:auto 700px}}
+    @media(max-width:850px){
+      .categories{grid-template-columns:repeat(3,minmax(0,1fr))}
+      .hero-bottom{align-items:start;flex-direction:column;gap:22px}
+      .visual{grid-template-columns:1fr 1fr}
+      .visual-copy{padding:25px}
+      .gallery{gap:12px}
+      figcaption{padding:15px}
+      .faq-layout{grid-template-columns:1fr;gap:25px}
+    }
+    @media(max-width:600px){
+      .wrap{width:calc(100% - 28px)}
+      .top-inner{padding:16px 0}
+      .top-note{font-size:.7rem;max-width:120px;text-align:right}
+      .directory-head{align-items:start}
+      .directory-head span{max-width:115px;text-align:right}
+      .categories{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .categories a{font-size:.78rem}
+      .hero{padding:36px 0}
+      .visual,.section-head,.steps,.gallery,.articles{grid-template-columns:1fr}
+      .visual img{min-height:0;aspect-ratio:1.4}
+      .visual-copy{padding:28px}
+      .section{padding:42px 0}
+      .section-head{gap:16px}
+      .steps{gap:24px}
+      .gallery figure{display:grid;grid-template-columns:125px 1fr;align-items:center}
+      .gallery img{height:150px}
+      figcaption h3{font-size:1.1rem}
+      figcaption p{font-size:.83rem}
+      .closing{flex-direction:column;align-items:start;padding:25px}
+      .button{white-space:normal}
+    }
+    @media(prefers-reduced-motion:no-preference){a{transition:background-color .15s ease,border-color .15s ease}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebPage",
+        "name":"BaseTao spreadsheet : catégories, tailles et guide QC",
+        "description":"Un guide indépendant en français pour organiser des liens produits, comparer les mesures, lire les photos QC et préparer un budget.",
+        "inLanguage":"fr",
+        "about":{"@type":"Thing","name":"BaseTao spreadsheet"},
+        "hasPart":[
+          {"@id":"#guide-mesures"},
+          {"@id":"#guide-budget"},
+          {"@id":"#questions"}
+        ]
+      },
+      {
+        "@type":"Article",
+        "@id":"#guide-mesures",
+        "headline":"Les mesures passent avant l'étiquette",
+        "inLanguage":"fr",
+        "description":"Comment comparer les dimensions d'un vêtement, d'une chaussure ou d'un accessoire avant de choisir une taille.",
+        "articleBody":"Pour un hoodie, comparez la largeur poitrine à plat, la longueur du dos, les épaules et les manches avec un vêtement qui vous convient. La largeur à plat et le tour de poitrine sont deux mesures différentes. Pour une sneaker, confirmez le système de pointure et la méthode de mesure. Pour un bob ou un bracelet, vérifiez le tour de tête ou de poignet et l'ajustement indiqué."
+      },
+      {
+        "@type":"Article",
+        "@id":"#guide-budget",
+        "headline":"Du prix affiché au budget livré",
+        "inLanguage":"fr",
+        "description":"Les postes à noter pour comparer une estimation de coût livré sans confondre prix produit et total.",
+        "articleBody":"Le budget estimatif réunit le prix de la variante, la livraison intérieure, les frais du service, le transport international et les taxes applicables. Le poids volumétrique peut influencer le transport selon le prestataire. Notez la devise, la date du devis et les conditions de retour. Laissez un poste inconnu à confirmer plutôt que de lui attribuer zéro."
+      },
+      {
+        "@type":"FAQPage",
+        "@id":"#questions",
+        "inLanguage":"fr",
+        "mainEntity":[
+          {
+            "@type":"Question",
+            "name":"Qu'est-ce qu'un BaseTao spreadsheet ?",
+            "acceptedAnswer":{"@type":"Answer","text":"Cette expression désigne généralement un tableau ou un répertoire de liens produits utilisé pour préparer des recherches liées à BaseTao. Les catégories et les notes facilitent la comparaison ; elles ne garantissent ni disponibilité ni qualité."}
+          },
+          {
+            "@type":"Question",
+            "name":"Comment utiliser ce guide sans télécharger de fichier ?",
+            "acceptedAnswer":{"@type":"Answer","text":"Ouvrez une catégorie, retenez quelques articles puis notez leurs liens, variantes, mesures et informations manquantes dans l'outil de votre choix. Cette page est un guide HTML ; aucun téléchargement de tableur n'est nécessaire."}
+          },
+          {
+            "@type":"Question",
+            "name":"Les photos QC prouvent-elles l'authenticité ?",
+            "acceptedAnswer":{"@type":"Answer","text":"Non. Les photos QC permettent d'observer certains détails de l'article reçu. Elles ne suffisent pas à établir l'authenticité, la composition exacte ou la durabilité. Pour une pièce de marque, demandez une provenance et des justificatifs adaptés."}
+          },
+          {
+            "@type":"Question",
+            "name":"Un lien fonctionne-t-il avec tous les agents ?",
+            "acceptedAnswer":{"@type":"Answer","text":"La compatibilité dépend de la plateforme source, du produit et des règles actuelles du service choisi. Confirmez ces points directement auprès du service avant de payer."}
+          },
+          {
+            "@type":"Question",
+            "name":"Quel montant faut-il comparer avant de commander ?",
+            "acceptedAnswer":{"@type":"Answer","text":"Comparez le coût livré estimatif : article, livraison intérieure, frais du service, transport international et taxes applicables. Précisez la devise et la date ; les montants manquants restent à confirmer."}
+          },
+          {
+            "@type":"Question",
+            "name":"Ce site représente-t-il BaseTao ou les marques illustrées ?",
+            "acceptedAnswer":{"@type":"Answer","text":"Non. Ce guide est indépendant de BaseTao, Nike, Louis Vuitton, Gucci, Hermès et Dior. Les images servent de repères visuels et ne constituent pas une offre ni une preuve de disponibilité sur HipobuyFind."}
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/txuki/">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-inner">
+      <a class="logo" href="https://www.hipobuyfind.com">hipobuyfind.com</a>
+      <span class="top-note">Le carnet de sélection<br>Guide indépendant · Français</span>
+    </div>
+  </header>
+
+  <main>
+    <nav class="directory" aria-label="Catégories de produits">
+      <div class="wrap">
+        <div class="directory-head">
+          <h2>Commencez par une catégorie</h2>
+          <span>Accès direct au catalogue HipobuyFind</span>
+        </div>
+        <div class="categories">
+          <a href="https://hipobuyfind.com/category-911-Shoes.html" lang="en">Shoes</a>
+          <a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html" lang="en">Hoodies/Sweaters</a>
+          <a href="https://hipobuyfind.com/category-913-T-Shirts.html" lang="en">T-Shirts</a>
+          <a href="https://hipobuyfind.com/category-914-Jackets.html" lang="en">Jackets</a>
+          <a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html" lang="en">Pants/Shorts</a>
+          <a href="https://hipobuyfind.com/category-916-Headwear.html" lang="en">Headwear</a>
+          <a href="https://hipobuyfind.com/category-917-Sets.html" lang="en">Sets</a>
+          <a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html" lang="en">Underwear/underpants</a>
+          <a href="https://hipobuyfind.com/category-919-Jersey.html" lang="en">Jersey</a>
+          <a href="https://hipobuyfind.com/category-920-Accessories.html" lang="en">Accessories</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="wrap">
+      <section class="hero" aria-labelledby="titre">
+        <p class="eyebrow">Repérer · Mesurer · Comparer</p>
+        <h1 id="titre">BaseTao spreadsheet.<br><span>Choisir avec méthode.</span></h1>
+        <div class="hero-bottom">
+          <p class="intro">Une belle photo donne envie. Une fiche bien renseignée aide à décider. Organisez vos repérages de sneakers, vêtements et accessoires autour de trois critères : la bonne variante, les bonnes mesures et un budget compréhensible.</p>
+          <a class="button" href="https://www.hipobuyfind.com">Explorer HipobuyFind <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="visual" aria-label="Repère visuel sneakers">
+        <figure>
+          <img src="https://s-cdn.vnluxury.vn/vnlux-media/22/1/21/louis_vuitton_nike_air_force_1.jpg"
+               width="1200" height="750"
+               alt="Baskets Nike Air Force 1 Louis Vuitton aux empiècements marron monogrammés et blancs à damier."
+               fetchpriority="high" loading="eager" decoding="async">
+        </figure>
+        <div class="visual-copy">
+          <p class="eyebrow">Le détail qui change la décision</p>
+          <h2>Une silhouette similaire peut cacher une fiche différente.</h2>
+          <p>Référence, matière annoncée, coloris et pointure doivent correspondre à la variante sélectionnée. Le visuel constitue un point de départ pour la recherche.</p>
+          <small>Illustration éditoriale Nike / Louis Vuitton. Photographie publiée par VNLuxury. Aucune disponibilité ni authenticité d'une annonce externe n'est déduite de cette image.</small>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="definition">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">01 / Comprendre</p>
+            <h2 id="definition">À quoi sert ce répertoire ?</h2>
+          </div>
+          <p>Ce guide BaseTao en français accompagne la recherche. Les liens de cette page ouvrent HipobuyFind ; ils ne déclenchent aucune commande auprès de BaseTao.</p>
+        </div>
+        <p class="answer">Un <strong>BaseTao spreadsheet</strong> désigne généralement un tableau ou un répertoire de liens produits utilisé pour préparer des recherches liées à BaseTao. Son intérêt : réunir des références, comparer des variantes et conserver les questions à résoudre avant l'achat.</p>
+        <div class="steps">
+          <article class="step">
+            <span class="number">A / DÉLIMITER</span>
+            <h3>Partir d'un usage</h3>
+            <p>Pour choisir une catégorie de sneakers, distinguez l'usage recherché de l'esthétique. Pour organiser une sélection de vêtements, fixez d'abord la coupe, la saison et les dimensions nécessaires.</p>
+          </article>
+          <article class="step">
+            <span class="number">B / DOCUMENTER</span>
+            <h3>Retenir la bonne variante</h3>
+            <p>Comparer des liens produits BaseTao exige de noter le vendeur, la référence, la taille et le coloris. Deux photos ressemblantes peuvent correspondre à des options différentes.</p>
+          </article>
+          <article class="step">
+            <span class="number">C / VÉRIFIER</span>
+            <h3>Revenir à la fiche source</h3>
+            <p>Avant de payer, vérifiez la compatibilité du lien avec le service retenu. Contrôlez les conditions actuelles, la disponibilité et les informations qui manquent à votre sélection.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section deferred" aria-labelledby="reperes">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">02 / Observer</p>
+            <h2 id="reperes">Trois regards sur le détail.</h2>
+          </div>
+          <p>Une sélection de repères visuels pour apprendre à décrire ce que l'on voit, puis identifier ce qu'il reste à vérifier.</p>
+        </div>
+        <div class="gallery">
+          <figure>
+            <img src="https://galeriaderieles.com/cdn/shop/collections/IMG_8433_1200x1200.jpg?v=1721838651"
+                 width="600" height="600" loading="lazy" decoding="async"
+                 alt="Composition de quatre sneakers, avec une basket Gucci à motif GG et une Nike verte et blanche.">
+            <figcaption>
+              <span class="eyebrow">Sneakers / Nike et Gucci</span>
+              <h3>Lire les proportions</h3>
+              <p>Comparez la forme, les panneaux et la semelle. Une photographie ne permet pas de déduire le confort.</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://www.crepslocker.com/cdn/shop/products/dior-oblique-jacquard-navy-blue-beige-cotton-bucket-hat-293c906g5763_c189-crepslocker-front.jpg?v=1680612680"
+                 width="600" height="600" loading="lazy" decoding="async"
+                 alt="Bob Dior Oblique bleu marine et beige, à motif jacquard et boucle latérale.">
+            <figcaption>
+              <span class="eyebrow">Couvre-chefs / Dior</span>
+              <h3>Vérifier l'ajustement</h3>
+              <p>Le tour de tête, la profondeur et la largeur du bord comptent davantage qu'une lettre de taille isolée.</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://assets.hermes.com/is/image/hermesproduct/bracelet-clic-h--700001F%204P-front-1-300-0-1000-1000_b.jpg"
+                 width="600" height="600" loading="lazy" decoding="async"
+                 alt="Bracelet Hermès Clic H à émail clair, finition métallique dorée et fermoir en forme de H.">
+            <figcaption>
+              <span class="eyebrow">Bijoux / Hermès</span>
+              <h3>Examiner le fermoir</h3>
+              <p>Pour choisir la taille d'un bracelet, confirmez la mesure intérieure, l'ouverture et le jeu souhaité au poignet.</p>
+            </figcaption>
+          </figure>
+        </div>
+        <p class="note">Photographies de référence : Galeria de Rieles, Crepslocker et Hermès. Ces illustrations ne constituent pas des fiches de vente et ne prouvent pas qu'un article identique figure dans le catalogue de destination.</p>
+      </section>
+
+      <section class="section deferred" aria-labelledby="tableau">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">03 / Structurer</p>
+            <h2 id="tableau">Un tableau qui aide à trancher.</h2>
+          </div>
+          <p>Pour préparer un tableau comparatif personnel, conservez peu de lignes, mais des données comparables. Écrivez « à confirmer » lorsqu'une information manque.</p>
+        </div>
+        <div class="table-scroll" role="region" aria-label="Tableau de comparaison des produits" tabindex="0">
+          <table>
+            <caption>Les champs utiles pour organiser vos BaseTao finds</caption>
+            <thead>
+              <tr><th scope="col">Champ</th><th scope="col">À consigner</th><th scope="col">Contrôle utile</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Source et variante</th><td>Lien, vendeur, référence, couleur, taille.</td><td>Comparer une variante et une référence précises, plutôt qu'une image seule.</td></tr>
+              <tr><th scope="row">Dimensions</th><td>Mesures en centimètres et méthode employée.</td><td>Vérifier la pointure des chaussures ou les dimensions du vêtement.</td></tr>
+              <tr><th scope="row">Composition</th><td>Matière déclarée et informations de l'étiquette.</td><td>Vérifier une composition textile sans la déduire de l'apparence.</td></tr>
+              <tr><th scope="row">Visuels</th><td>Photo catalogue, photo de détail ou photo QC.</td><td>Distinguer photo catalogue et photo QC du produit reçu.</td></tr>
+              <tr><th scope="row">Budget</th><td>Devise, prix de variante, frais et estimation de transport.</td><td>Calculer un budget livré estimatif avec les postes encore inconnus.</td></tr>
+              <tr><th scope="row">Suivi</th><td>Date de consultation, statut du lien et règles de retour.</td><td>Noter la date de vérification d'un lien, puis le rouvrir avant paiement.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section deferred" aria-labelledby="dossiers">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">04 / Approfondir</p>
+            <h2 id="dossiers">Les dossiers du carnet.</h2>
+          </div>
+          <p>Deux articles pratiques pour passer du repérage à une comparaison documentée, sans inventer de prix ou de performances.</p>
+        </div>
+        <div class="articles">
+          <article class="article" id="guide-mesures">
+            <p class="eyebrow">Dossier / Tailles et proportions</p>
+            <h3>Les mesures passent avant l'étiquette</h3>
+            <p>Comparer un hoodie à un vêtement existant donne un repère concret. Posez votre vêtement à plat, sans l'étirer, puis relevez la largeur poitrine, la longueur du dos, les épaules et les manches. Utilisez ensuite la même méthode pour lire le tableau de l'annonce.</p>
+            <h4>Comprendre la largeur poitrine à plat</h4>
+            <p>Une largeur à plat et un tour de poitrine sont deux mesures différentes. Vérifiez ce que le vendeur mesure, à quel endroit et avec quelle tolérance. Pour choisir la longueur d'un t-shirt ou vérifier les épaules d'une veste, la coupe souhaitée reste aussi importante que la taille affichée.</p>
+            <h4>Adapter la vérification à chaque catégorie</h4>
+            <ul>
+              <li><strong>Pantalon :</strong> comparez la taille, l'entrejambe et l'ouverture de jambe ; précisez si la ceinture est élastique.</li>
+              <li><strong>Chaussure :</strong> confirmez le système de pointure. Mesurer une semelle intérieure n'est utile que si la mesure est disponible et réalisée de façon comparable.</li>
+              <li><strong>Bob ou casquette :</strong> vérifiez le tour de tête et la présence d'un réglage.</li>
+              <li><strong>Bracelet :</strong> relevez le tour de poignet et l'ajustement indiqué ; une photo ne donne pas une dimension fiable.</li>
+            </ul>
+            <p>Lorsqu'une mesure essentielle manque, demandez-la avant de valider la variante. Une étiquette S, M ou L ne remplace pas un tableau de dimensions propre à l'article.</p>
+          </article>
+
+          <article class="article" id="guide-budget">
+            <p class="eyebrow">Dossier / Budget et contrôle</p>
+            <h3>Du prix affiché au budget livré</h3>
+            <p>Le montant présenté sur une fiche peut ne concerner qu'une option. Vérifiez la variante, la quantité et la devise avant de comparer deux annonces. Ajoutez ensuite les frais qui s'appliquent à votre parcours d'achat.</p>
+            <div class="formula">Budget estimatif = article + livraison intérieure + frais du service + transport international + taxes applicables.</div>
+            <h4>Comprendre le poids volumétrique</h4>
+            <p>Selon le transporteur et le service, l'encombrement du colis peut influencer le poids facturé. Une boîte volumineuse peut donc modifier l'estimation. Demandez les règles de calcul et un devis adapté à la destination plutôt que de supposer un tarif universel.</p>
+            <h4>Lire des photos QC BaseTao avec une question précise</h4>
+            <p>Si le service propose des photos QC, comparez le coloris, la taille visible et les détails de la variante commandée. Pour demander des photos de détail, nommez la zone : couture, fermeture, étiquette, semelle ou mesure à plat. Confirmez aussi si cette demande entraîne des frais.</p>
+            <p>Enfin, vérifiez les conditions de retour avant l'expédition internationale : délai, exclusions et coût éventuel. Notez la date du devis et laissez chaque poste inconnu « à confirmer » plutôt que de lui attribuer zéro.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section deferred" aria-labelledby="faq-title" id="questions">
+        <div class="faq-layout">
+          <div>
+            <p class="eyebrow">05 / Réponses directes</p>
+            <h2 id="faq-title">Avant de continuer.</h2>
+            <p class="note">Les informations variables se vérifient auprès du vendeur ou du service choisi au moment de l'achat.</p>
+          </div>
+          <div>
+            <details open>
+              <summary>Qu'est-ce qu'un BaseTao spreadsheet ?</summary>
+              <p>Cette expression désigne généralement un tableau ou un répertoire de liens produits utilisé pour préparer des recherches liées à BaseTao. Les catégories et les notes facilitent la comparaison ; elles ne garantissent ni disponibilité ni qualité.</p>
+            </details>
+            <details>
+              <summary>Comment utiliser ce guide sans télécharger de fichier ?</summary>
+              <p>Ouvrez une catégorie, retenez quelques articles puis notez leurs liens, variantes, mesures et informations manquantes dans l'outil de votre choix. Cette page est un guide HTML ; aucun téléchargement de tableur n'est nécessaire.</p>
+            </details>
+            <details>
+              <summary>Les photos QC prouvent-elles l'authenticité ?</summary>
+              <p>Non. Les photos QC permettent d'observer certains détails de l'article reçu. Elles ne suffisent pas à établir l'authenticité, la composition exacte ou la durabilité. Pour une pièce de marque, demandez une provenance et des justificatifs adaptés.</p>
+            </details>
+            <details>
+              <summary>Un lien fonctionne-t-il avec tous les agents ?</summary>
+              <p>La compatibilité dépend de la plateforme source, du produit et des règles actuelles du service choisi. Confirmez ces points directement auprès du service avant de payer.</p>
+            </details>
+            <details>
+              <summary>Quel montant faut-il comparer avant de commander ?</summary>
+              <p>Comparez le coût livré estimatif : article, livraison intérieure, frais du service, transport international et taxes applicables. Précisez la devise et la date ; les montants manquants restent à confirmer.</p>
+            </details>
+            <details>
+              <summary>Ce site représente-t-il BaseTao ou les marques illustrées ?</summary>
+              <p>Non. Ce guide est indépendant de BaseTao, Nike, Louis Vuitton, Gucci, Hermès et Dior. Les images servent de repères visuels et ne constituent pas une offre ni une preuve de disponibilité sur HipobuyFind.</p>
+            </details>
+          </div>
+        </div>
+        <div class="closing">
+          <div>
+            <h2>Une catégorie. Quelques références. Une décision éclairée.</h2>
+            <p>Explorez le catalogue, puis gardez uniquement les articles que vous pouvez comparer utilement.</p>
+          </div>
+          <a class="button" href="https://www.hipobuyfind.com">Ouvrir le catalogue <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="wrap">
+    <a class="logo" href="https://www.hipobuyfind.com">hipobuyfind.com</a>
+    <p>Guide éditorial indépendant en français. Les noms de marques servent à identifier les références illustrées et n'impliquent aucune affiliation. Aucun prix, avis client, stock ou délai de livraison n'est garanti sur cette page. Les achats et leurs conditions relèvent du vendeur ou du service avec lequel vous contractez.</p>
+    <p>© 2026 · Le carnet de sélection.</p>
+  </footer>
+</body>
+</html>
